@@ -1,0 +1,35 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <h1>Welcome to the Dashboard, <span id="usernameDisplay"></span></h1>
+    <p>You're logged in successfully!</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    // Periksa apakah pengguna sudah login
+    const user = localStorage.getItem("user");
+    if (!user) {
+      // Jika tidak ada, arahkan kembali ke halaman login
+      window.location.href = "index.html";
+    } else {
+      // Tampilkan username pengguna
+      document.getElementById("usernameDisplay").textContent = user;
+    }
+
+    // Fungsi logout
+    function logout() {
+      localStorage.removeItem("user");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

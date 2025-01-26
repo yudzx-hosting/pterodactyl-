@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+    <!-- Login Container -->
+    <div class="login-container" id="login-container">
+        <h1>LOGIN TO CONTINUE</h1>
+        <p>JAWA DI LARANG LOGIN</p>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@yudzxnxx" target="_blank">
+                    <img src="assets/icons/tiktok-logo.png" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/yudzsenpai_" target="_blank">
+                    <img src="assets/icons/instagram-logo.png" alt="Instagram">
+                </a>
+            </div>
+            <button onclick="login()">Login</button>
+            <p id="error-message" style="display: none;">Username atau Password salah!</p>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
