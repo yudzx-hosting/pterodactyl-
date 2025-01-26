@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Server</title>
+
+  <!-- Link ke file CSS untuk styling dan animasi -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <div id="create-server-container">
+    <h2>Create Server</h2>
+    <form id="createForm">
+      <input type="text" id="serverName" placeholder="Server Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <input type="text" id="username" placeholder="Username" required>
+      <select id="ram">
+        <option value="1">1 GB</option>
+        <option value="2">2 GB</option>
+        <option value="4">4 GB</option>
+        <option value="8">8 GB</option>
+        <option value="16">16 GB</option>
+        <option value="20">20 GB</option>
+      </select>
+      <button type="button" id="createBtn">Create Account and Server</button>
+    </form>
+  </div>
+
+  <!-- Firebase dan script JS -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="js/firebase-config.js"></script>
+  <script src="js/create-server.js"></script>
+</body>
+</html>
